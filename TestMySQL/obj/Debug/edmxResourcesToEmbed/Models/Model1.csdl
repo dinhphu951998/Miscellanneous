@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="thanhtamluxuryModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Appointment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="note" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="isNew" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Banner">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="path" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Header">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="to" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="exact" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="ImageItem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="path" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="serviceItemId" Type="Int32" />
+    <NavigationProperty Name="ServiceItem" Relationship="Self.FK__ImageItem__servi__1BFD2C07" FromRole="ImageItem" ToRole="ServiceItem" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="googleLocation" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="PriceDetail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="applyDate" Type="DateTime" Precision="0" />
+    <Property Name="price" Type="Double" Nullable="false" />
+    <Property Name="serviceItemId" Type="Int32" />
+    <NavigationProperty Name="ServiceItem" Relationship="Self.FK__PriceDeta__servi__1ED998B2" FromRole="PriceDetail" ToRole="ServiceItem" />
+  </EntityType>
+  <EntityType Name="ServiceItem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="serviceType" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="type" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="price" Type="Double" />
+    <Property Name="slug" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="mainImage" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="location" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="priceDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="shortDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="isActive" Type="Boolean" />
+    <NavigationProperty Name="ImageItems" Relationship="Self.FK__ImageItem__servi__1BFD2C07" FromRole="ServiceItem" ToRole="ImageItem" />
+    <NavigationProperty Name="PriceDetails" Relationship="Self.FK__PriceDeta__servi__1ED998B2" FromRole="ServiceItem" ToRole="PriceDetail" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK__ImageItem__servi__1BFD2C07">
+    <End Role="ServiceItem" Type="Self.ServiceItem" Multiplicity="0..1" />
+    <End Role="ImageItem" Type="Self.ImageItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceItem">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ImageItem">
+        <PropertyRef Name="serviceItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PriceDeta__servi__1ED998B2">
+    <End Role="ServiceItem" Type="Self.ServiceItem" Multiplicity="0..1" />
+    <End Role="PriceDetail" Type="Self.PriceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceItem">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PriceDetail">
+        <PropertyRef Name="serviceItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="thanhtamluxuryEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Accounts" EntityType="Self.Account" />
+    <EntitySet Name="Appointments" EntityType="Self.Appointment" />
+    <EntitySet Name="Banners" EntityType="Self.Banner" />
+    <EntitySet Name="Headers" EntityType="Self.Header" />
+    <EntitySet Name="ImageItems" EntityType="Self.ImageItem" />
+    <EntitySet Name="Locations" EntityType="Self.Location" />
+    <EntitySet Name="PriceDetails" EntityType="Self.PriceDetail" />
+    <EntitySet Name="ServiceItems" EntityType="Self.ServiceItem" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <AssociationSet Name="FK__ImageItem__servi__1BFD2C07" Association="Self.FK__ImageItem__servi__1BFD2C07">
+      <End Role="ServiceItem" EntitySet="ServiceItems" />
+      <End Role="ImageItem" EntitySet="ImageItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PriceDeta__servi__1ED998B2" Association="Self.FK__PriceDeta__servi__1ED998B2">
+      <End Role="ServiceItem" EntitySet="ServiceItems" />
+      <End Role="PriceDetail" EntitySet="PriceDetails" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

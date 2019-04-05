@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="thanhtamluxuryModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="username" />
+    </Key>
+    <Property Name="username" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="password" Type="varchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Appointment">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="address" Type="nvarchar(max)" />
+    <Property Name="email" Type="varchar" MaxLength="255" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="note" Type="nvarchar(max)" />
+    <Property Name="phone" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="isNew" Type="bit" />
+  </EntityType>
+  <EntityType Name="Banner">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="path" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Header">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="to" Type="varchar" MaxLength="50" />
+    <Property Name="exact" Type="bit" />
+  </EntityType>
+  <EntityType Name="ImageItem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="path" Type="varchar(max)" />
+    <Property Name="serviceItemId" Type="int" />
+  </EntityType>
+  <EntityType Name="Location">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="address" Type="nvarchar(max)" />
+    <Property Name="email" Type="varchar" MaxLength="255" />
+    <Property Name="phone" Type="varchar" MaxLength="50" />
+    <Property Name="googleLocation" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="PriceDetail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="applyDate" Type="date" />
+    <Property Name="price" Type="float" Nullable="false" />
+    <Property Name="serviceItemId" Type="int" />
+  </EntityType>
+  <EntityType Name="ServiceItem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="255" Nullable="false" />
+    <Property Name="serviceType" Type="varchar" MaxLength="255" />
+    <Property Name="type" Type="nvarchar" MaxLength="255" />
+    <Property Name="price" Type="float" />
+    <Property Name="slug" Type="varchar" MaxLength="255" />
+    <Property Name="mainImage" Type="varchar" MaxLength="255" />
+    <Property Name="location" Type="varchar" MaxLength="255" />
+    <Property Name="priceDescription" Type="nvarchar(max)" />
+    <Property Name="shortDescription" Type="nvarchar(max)" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="isActive" Type="bit" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK__ImageItem__servi__1BFD2C07">
+    <End Role="ServiceItem" Type="Self.ServiceItem" Multiplicity="0..1" />
+    <End Role="ImageItem" Type="Self.ImageItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceItem">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ImageItem">
+        <PropertyRef Name="serviceItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__PriceDeta__servi__1ED998B2">
+    <End Role="ServiceItem" Type="Self.ServiceItem" Multiplicity="0..1" />
+    <End Role="PriceDetail" Type="Self.PriceDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServiceItem">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="PriceDetail">
+        <PropertyRef Name="serviceItemId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="thanhtamluxuryModelStoreContainer">
+    <EntitySet Name="Account" EntityType="Self.Account" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Appointment" EntityType="Self.Appointment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Banner" EntityType="Self.Banner" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Header" EntityType="Self.Header" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ImageItem" EntityType="Self.ImageItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Location" EntityType="Self.Location" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PriceDetail" EntityType="Self.PriceDetail" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ServiceItem" EntityType="Self.ServiceItem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__ImageItem__servi__1BFD2C07" Association="Self.FK__ImageItem__servi__1BFD2C07">
+      <End Role="ServiceItem" EntitySet="ServiceItem" />
+      <End Role="ImageItem" EntitySet="ImageItem" />
+    </AssociationSet>
+    <AssociationSet Name="FK__PriceDeta__servi__1ED998B2" Association="Self.FK__PriceDeta__servi__1ED998B2">
+      <End Role="ServiceItem" EntitySet="ServiceItem" />
+      <End Role="PriceDetail" EntitySet="PriceDetail" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

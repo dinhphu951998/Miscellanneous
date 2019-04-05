@@ -1,0 +1,11 @@
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\bin\Debug\netcoreapp2.2\StatePattern.deps.json
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\bin\Debug\netcoreapp2.2\StatePattern.runtimeconfig.json
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\bin\Debug\netcoreapp2.2\StatePattern.runtimeconfig.dev.json
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\bin\Debug\netcoreapp2.2\StatePattern.dll
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\bin\Debug\netcoreapp2.2\StatePattern.pdb
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.csprojAssemblyReference.cache
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.csproj.CoreCompileInputs.cache
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.AssemblyInfoInputs.cache
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.AssemblyInfo.cs
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.dll
+D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.pdb
