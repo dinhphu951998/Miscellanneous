@@ -9,3 +9,14 @@ D:\Miscellaneous\DesignPatternMiscellanneous\AsyncAwaitTask\obj\Debug\netcoreapp
 D:\Miscellaneous\DesignPatternMiscellanneous\AsyncAwaitTask\obj\Debug\netcoreapp2.2\AsyncAwaitTask.dll
 D:\Miscellaneous\DesignPatternMiscellanneous\AsyncAwaitTask\obj\Debug\netcoreapp2.2\AsyncAwaitTask.pdb
 D:\Miscellaneous\DesignPatternMiscellanneous\AsyncAwaitTask\obj\Debug\netcoreapp2.2\AsyncAwaitTask.csprojAssemblyReference.cache
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\bin\Debug\netcoreapp2.2\AsyncAwaitTask.deps.json
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\bin\Debug\netcoreapp2.2\AsyncAwaitTask.runtimeconfig.json
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\bin\Debug\netcoreapp2.2\AsyncAwaitTask.runtimeconfig.dev.json
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\bin\Debug\netcoreapp2.2\AsyncAwaitTask.dll
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\bin\Debug\netcoreapp2.2\AsyncAwaitTask.pdb
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\obj\Debug\netcoreapp2.2\AsyncAwaitTask.csprojAssemblyReference.cache
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\obj\Debug\netcoreapp2.2\AsyncAwaitTask.csproj.CoreCompileInputs.cache
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\obj\Debug\netcoreapp2.2\AsyncAwaitTask.AssemblyInfoInputs.cache
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\obj\Debug\netcoreapp2.2\AsyncAwaitTask.AssemblyInfo.cs
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\obj\Debug\netcoreapp2.2\AsyncAwaitTask.dll
+D:\Miscellaneous\Miscellanneous\AsyncAwaitTask\obj\Debug\netcoreapp2.2\AsyncAwaitTask.pdb

@@ -9,3 +9,14 @@ D:\Miscellaneous\DesignPatternMiscellanneous\StatePatternWhenExtendState\bin\Deb
 D:\Miscellaneous\DesignPatternMiscellanneous\StatePatternWhenExtendState\bin\Debug\netcoreapp2.2\StatePatternWhenExtendState.pdb
 D:\Miscellaneous\DesignPatternMiscellanneous\StatePatternWhenExtendState\obj\Debug\netcoreapp2.2\StatePatternWhenExtendState.dll
 D:\Miscellaneous\DesignPatternMiscellanneous\StatePatternWhenExtendState\obj\Debug\netcoreapp2.2\StatePatternWhenExtendState.pdb
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\bin\Debug\netcoreapp2.2\StatePatternWhenExtendState.deps.json
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\bin\Debug\netcoreapp2.2\StatePatternWhenExtendState.runtimeconfig.json
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\bin\Debug\netcoreapp2.2\StatePatternWhenExtendState.runtimeconfig.dev.json
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\bin\Debug\netcoreapp2.2\StatePatternWhenExtendState.dll
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\bin\Debug\netcoreapp2.2\StatePatternWhenExtendState.pdb
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\obj\Debug\netcoreapp2.2\StatePatternWhenExtendState.csprojAssemblyReference.cache
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\obj\Debug\netcoreapp2.2\StatePatternWhenExtendState.csproj.CoreCompileInputs.cache
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\obj\Debug\netcoreapp2.2\StatePatternWhenExtendState.AssemblyInfoInputs.cache
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\obj\Debug\netcoreapp2.2\StatePatternWhenExtendState.AssemblyInfo.cs
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\obj\Debug\netcoreapp2.2\StatePatternWhenExtendState.dll
+D:\Miscellaneous\Miscellanneous\StatePatternWhenExtendState\obj\Debug\netcoreapp2.2\StatePatternWhenExtendState.pdb

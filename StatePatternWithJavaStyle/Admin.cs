@@ -15,23 +15,23 @@ namespace StatePatternWithJavaStyle
             };
 
             //update to processing
-            PossibleState processing = new ProcessingState();
+            State processing = new ProcessingState();
             order.SetState(processing);
 
             //update to delivering
-            PossibleState delivering = new DeliveringState();
+            State delivering = new DeliveringState();
             order.SetState(delivering);
 
             //the order has problem, we need to take a look back this order
-            PossibleState processing2 = new ProcessingState();
+            State processing2 = new ProcessingState();
             order.SetState(processing2);
 
             //everything now is alright. Delivery the order
-            PossibleState delivering2 = new DeliveringState();
+            State delivering2 = new DeliveringState();
             order.SetState(delivering2);
 
             //Mark order done
-            PossibleState done = new DoneState();
+            State done = new DoneState();
             order.SetState(done);
 
             Console.Read();

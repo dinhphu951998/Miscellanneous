@@ -9,3 +9,14 @@ D:\Miscellaneous\DesignPatternMiscellanneous\MySqlNormalization\obj\Debug\netcor
 D:\Miscellaneous\DesignPatternMiscellanneous\MySqlNormalization\bin\Debug\netcoreapp2.2\MySqlNormalization.pdb
 D:\Miscellaneous\DesignPatternMiscellanneous\MySqlNormalization\obj\Debug\netcoreapp2.2\MySqlNormalization.dll
 D:\Miscellaneous\DesignPatternMiscellanneous\MySqlNormalization\obj\Debug\netcoreapp2.2\MySqlNormalization.pdb
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\bin\Debug\netcoreapp2.2\MySqlNormalization.deps.json
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\bin\Debug\netcoreapp2.2\MySqlNormalization.runtimeconfig.json
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\bin\Debug\netcoreapp2.2\MySqlNormalization.runtimeconfig.dev.json
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\bin\Debug\netcoreapp2.2\MySqlNormalization.dll
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\bin\Debug\netcoreapp2.2\MySqlNormalization.pdb
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\obj\Debug\netcoreapp2.2\MySqlNormalization.csprojAssemblyReference.cache
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\obj\Debug\netcoreapp2.2\MySqlNormalization.csproj.CoreCompileInputs.cache
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\obj\Debug\netcoreapp2.2\MySqlNormalization.AssemblyInfoInputs.cache
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\obj\Debug\netcoreapp2.2\MySqlNormalization.AssemblyInfo.cs
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\obj\Debug\netcoreapp2.2\MySqlNormalization.dll
+D:\Miscellaneous\Miscellanneous\MySqlNormalization\obj\Debug\netcoreapp2.2\MySqlNormalization.pdb

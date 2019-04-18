@@ -1,0 +1,11 @@
+D:\Miscellaneous\Miscellanneous\Temp\bin\Debug\netcoreapp2.2\Temp.deps.json
+D:\Miscellaneous\Miscellanneous\Temp\bin\Debug\netcoreapp2.2\Temp.runtimeconfig.json
+D:\Miscellaneous\Miscellanneous\Temp\bin\Debug\netcoreapp2.2\Temp.runtimeconfig.dev.json
+D:\Miscellaneous\Miscellanneous\Temp\bin\Debug\netcoreapp2.2\Temp.dll
+D:\Miscellaneous\Miscellanneous\Temp\bin\Debug\netcoreapp2.2\Temp.pdb
+D:\Miscellaneous\Miscellanneous\Temp\obj\Debug\netcoreapp2.2\Temp.csprojAssemblyReference.cache
+D:\Miscellaneous\Miscellanneous\Temp\obj\Debug\netcoreapp2.2\Temp.csproj.CoreCompileInputs.cache
+D:\Miscellaneous\Miscellanneous\Temp\obj\Debug\netcoreapp2.2\Temp.AssemblyInfoInputs.cache
+D:\Miscellaneous\Miscellanneous\Temp\obj\Debug\netcoreapp2.2\Temp.AssemblyInfo.cs
+D:\Miscellaneous\Miscellanneous\Temp\obj\Debug\netcoreapp2.2\Temp.dll
+D:\Miscellaneous\Miscellanneous\Temp\obj\Debug\netcoreapp2.2\Temp.pdb

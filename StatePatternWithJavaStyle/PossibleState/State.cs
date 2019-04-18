@@ -5,12 +5,12 @@ using System.Text;
 
 namespace StatePatternWithJavaStyle
 {
-    abstract class PossibleState
+    abstract class State
     {
-//        public abstract void Handle(Context context);
-        
+        public virtual void Handle(Context context)
+        {
+            context.SetState(this);
+        }
     }
-
-
 
 }

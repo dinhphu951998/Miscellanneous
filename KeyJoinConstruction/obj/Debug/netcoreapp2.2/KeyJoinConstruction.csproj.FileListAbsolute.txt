@@ -1,0 +1,11 @@
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\bin\Debug\netcoreapp2.2\KeyJoinConstruction.deps.json
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\bin\Debug\netcoreapp2.2\KeyJoinConstruction.runtimeconfig.json
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\bin\Debug\netcoreapp2.2\KeyJoinConstruction.runtimeconfig.dev.json
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\bin\Debug\netcoreapp2.2\KeyJoinConstruction.dll
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\bin\Debug\netcoreapp2.2\KeyJoinConstruction.pdb
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\obj\Debug\netcoreapp2.2\KeyJoinConstruction.csprojAssemblyReference.cache
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\obj\Debug\netcoreapp2.2\KeyJoinConstruction.csproj.CoreCompileInputs.cache
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\obj\Debug\netcoreapp2.2\KeyJoinConstruction.AssemblyInfoInputs.cache
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\obj\Debug\netcoreapp2.2\KeyJoinConstruction.AssemblyInfo.cs
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\obj\Debug\netcoreapp2.2\KeyJoinConstruction.dll
+D:\Miscellaneous\Miscellanneous\KeyJoinConstruction\obj\Debug\netcoreapp2.2\KeyJoinConstruction.pdb

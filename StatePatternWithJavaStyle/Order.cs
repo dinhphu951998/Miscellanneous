@@ -11,9 +11,9 @@ namespace StatePatternWithJavaStyle
         public string Description { get; set; }
         public DateTime CreateTime { get; set; }
 
-        private PossibleState currentState;
+        private State currentState;
 
-        public PossibleState CurrentState
+        public State CurrentState
         {
             get
             {
@@ -30,9 +30,9 @@ namespace StatePatternWithJavaStyle
             this.currentState = new WaitingState();
         }
 
-        public override void SetState(PossibleState state)
+        public override void SetState(State state)
         {
-            this.currentState = state;
+            state.Handle(this);
         }
     }
 }

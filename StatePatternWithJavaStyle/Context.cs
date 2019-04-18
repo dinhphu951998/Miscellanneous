@@ -6,6 +6,6 @@ namespace StatePatternWithJavaStyle
 {
     abstract class Context
     {
-        public abstract void SetState(PossibleState state);
+        public abstract void SetState(State state);
     }
 }

@@ -9,3 +9,14 @@ D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\obj\Debug\netcoreapp2.
 D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.AssemblyInfo.cs
 D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.dll
 D:\Miscellaneous\DesignPatternMiscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.pdb
+D:\Miscellaneous\Miscellanneous\StatePattern\bin\Debug\netcoreapp2.2\StatePattern.deps.json
+D:\Miscellaneous\Miscellanneous\StatePattern\bin\Debug\netcoreapp2.2\StatePattern.runtimeconfig.json
+D:\Miscellaneous\Miscellanneous\StatePattern\bin\Debug\netcoreapp2.2\StatePattern.runtimeconfig.dev.json
+D:\Miscellaneous\Miscellanneous\StatePattern\bin\Debug\netcoreapp2.2\StatePattern.dll
+D:\Miscellaneous\Miscellanneous\StatePattern\bin\Debug\netcoreapp2.2\StatePattern.pdb
+D:\Miscellaneous\Miscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.csprojAssemblyReference.cache
+D:\Miscellaneous\Miscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.csproj.CoreCompileInputs.cache
+D:\Miscellaneous\Miscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.AssemblyInfoInputs.cache
+D:\Miscellaneous\Miscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.AssemblyInfo.cs
+D:\Miscellaneous\Miscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.dll
+D:\Miscellaneous\Miscellanneous\StatePattern\obj\Debug\netcoreapp2.2\StatePattern.pdb
